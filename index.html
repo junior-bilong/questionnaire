@@ -37,8 +37,14 @@
                 alert ("Reponse fausse");
             }
         }
+        
+        if (bonneReponse <= 1) {
+                alert (`Vous avez ${bonneReponse} bonne réponse sur ${questions.length}`);
+            } else {
+                alert (`Vous avez ${bonneReponse} bonnes réponses sur ${questions.length}`);
+            }
 
-        alert (`Vous avez ${bonneReponse} bonnes réponses sur ${questions.length}`);
+        
 
     </script>
 </body>
