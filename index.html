@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Questionnaire</title>
+</head>
+<body>
+    <h1 style = "text-decoration: underline;">challenge : un petit questionnaire pour s'amuser.</h1>
+    <script>
+        const questions = [
+            {
+                question : "si je sais que je l'ai et qu'on me dit que je ne l'ai pas, je risque de la perdre, qui suis-je?\n1. la distance\n2. la patience\n3. l'argent",
+                reponse : 2
+
+            },
+            {
+                question : "fidèle comme ton ombre, je te suis dépuis ton premier souffle et je te suivrais jusqu'à ton dernier, qui suis-je?\n1. ton nom\n2. ta maison\n3. ton argent",
+                reponse : 1
+            },
+            {
+                question : "ta maman t'envoie à la boutique, elle te demannde d'acheter une boite de lait et après elle te dit s'il y a les oeufs prends six, tu vas revenir avec quoi?\n1. les oeufs\n2. les oeufs et la boite de lait\n3. la boite de lait ",
+                reponse : 3
+            },
+            {
+                question : "le type de dispositif industriel utilisé pour le demarrage d'un moteur monophasé à phase auxilliare.\n1. le pressostat de sécurité\n2. le relais de tension\n3. le multimètre",
+                reponse : 2
+            }
+        ];
+
+        let bonneReponse = 0;
+        for (let i = 0; i < questions.length; i++) {
+            let repUtilisateur = prompt (questions[i].question);
+            if (repUtilisateur == questions[i].reponse) {
+                alert ("Bonne réponse");
+                bonneReponse += 1;
+            } else {
+                alert ("Reponse fausse");
+            }
+        }
+
+        alert (`Vous avez ${bonneReponse} bonnes réponses sur ${questions.length}`);
+
+    </script>
+</body>
+</html>
